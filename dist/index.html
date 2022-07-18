@@ -13,33 +13,33 @@
 <body>
   <header>
     <a href="./index.html"><img src="1c174ccea84ec59ff880.svg" alt="Website's logo"></a>
-    <nav>
-      <div>
-        <li>Features <i><img src="bebf05132571af33611e.svg" alt="Icon arrow down"></i>
-          <ul>
-            <li><i><img src="7264cc64a81fa348da1d.svg" alt="Icon planing"></i>Todo List</li>
-            <li><i><img src="238c231afbc7d43b81c6.svg" alt="Icon calendar"></i>Calendar</li>
-            <li><i><img src="d573f5028c4469edf76a.svg" alt="Icon reminders"></i>Reminders</li>
-            <li><i><img src="7264cc64a81fa348da1d.svg" alt="Icon planing"></i>Planing</li>
+    <div id="navContainer" class="navContainer hidden">
+      <nav id="nav">
+        <button id="nav-btn-closeMenu" class="btn"><img src="3f33fd68b142340b7eb8.svg" alt="Close menu button"></button>
+        <ul class="list">
+          <li class="displayer">Features <i><img src="bebf05132571af33611e.svg" alt="#"></i></li>
+          <ul class="sub-list hidden">
+            <li><a href="#"><i><img src="84eeba8f3b9a1811c1ea.svg" alt="Icon planing"></i><p>Todo List</p></a></li>
+            <li><a href="#"><i><img src="238c231afbc7d43b81c6.svg" alt="Icon calendar"></i><p>Calendar</p></a></li>
+            <li><a href="#"><i><img src="d573f5028c4469edf76a.svg" alt="Icon reminders"></i><p>Reminders</p></a></li>
+            <li><a href="#"><i><img src="7264cc64a81fa348da1d.svg" alt="Icon planing"></i><p>Planing</p></a></li>
           </ul>
-        </li>
-        <li>Company
-          <ul>
-            <li>History</li>
-            <li>Our Team</li>
-            <li>Blog</li>
+          <li class="displayer">Company<i><img src="bebf05132571af33611e.svg" alt="#"></i></li>
+          <ul class="sub-list hidden">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
           </ul>
-        </li>
-        <li>Careers</li>
-        <li>About</li>
-      </div>
-      <div>
-        <button>Register</button>
-        <button>Login</button>
-      </div>
-      <button>Close Button</button>
-    </nav>
-    <button>Hamburguer button</button>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="containerButtons">
+          <button class="btn btn-border">Register</button>
+          <button class="btn">Login</button>
+        </div>
+      </nav>
+    </div>
+    <button id="nav-btn-menu" class="btn"><img src="863803c904916606b7a1.svg" alt="bars menu button"></button>
   </header>
   <section>
     <figure style="display: none;">
@@ -49,7 +49,7 @@
       <main>
         <h1>Make remote work</h1>
         <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-        <button>Learn more</button>
+        <button class="btn">Learn more</button>
       </main>
       <!-- Displayed to "none" in order to design the responsive navbar -->
       <figure>
@@ -64,5 +64,6 @@
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
     <p>Coded by <a href="https://gist.github.com/Renzo-Guerra">Renzo Guerra</a>.</p>
   </footer>
+  <script src="https://kit.fontawesome.com/5565fa5da4.js" crossorigin="anonymous"></script>
 <script defer src="main.js"></script></body>
 </html>
