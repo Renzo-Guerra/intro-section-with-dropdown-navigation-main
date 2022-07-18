@@ -96,13 +96,41 @@ select {
   border-radius: 0.7rem;
 }
 
+.outerContainer {
+  display: grid;
+  grid-column: 1fr;
+  row-gap: 0.5rem;
+}
+.outerContainer .leftColumnContainer {
+  display: grid;
+  grid-column: 1fr;
+  padding: 1rem;
+  text-align: center;
+}
+.outerContainer .leftColumnContainer figure {
+  display: grid;
+  grid-column: repeat(4, 1fr);
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+.outerContainer .leftColumnContainer main {
+  margin-bottom: 2rem;
+}
+.outerContainer .leftColumnContainer main button {
+  margin: 1rem 0;
+  padding-inline: 1.4rem;
+  background-color: hsl(0deg, 0%, 8%);
+  color: hsl(0deg, 0%, 98%);
+  border-radius: 1rem;
+}
+
 header {
   background-color: transparent;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 header .navContainer {
   width: 100vw;
@@ -118,7 +146,7 @@ header .navContainer {
 header .navContainer nav {
   padding: 1rem;
   background-color: hsl(0deg, 0%, 98%);
-  width: 65%;
+  width: min(65%, 300px);
   color: hsl(0deg, 0%, 41%);
   display: flex;
   flex-direction: column;
@@ -153,6 +181,23 @@ header .navContainer nav .containerButtons {
   display: flex;
   gap: 0.5rem;
   flex-direction: column-reverse;
+}
+
+footer {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer a {
+  color: hsl(228deg, 45%, 44%) !important;
+}
+@media screen and (min-width: 480px) {
+  footer {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 0.3rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map*/
